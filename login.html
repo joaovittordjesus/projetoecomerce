@@ -10,8 +10,8 @@
 
 <body>
     <div class="main">
-    <form id="loginForm">
-            
+        <form id="loginForm">
+
             <h3 class="cabecalho">Login</h3>
             <hr>
             <div class="login">
@@ -21,7 +21,7 @@
                     <label for="l-email"></label>
                     <input type="email" placeholder="E-mail" id="email">
                     <span id="emailError" style="color: red;"></span>
-                    
+
                     <label for="l-password"></label>
                     <input type="password" placeholder="Senha" id="password">
                     <span id="passwordError" style="color: red;"></span>
@@ -30,12 +30,12 @@
                 <p>Ainda não tem uma conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a></p>
                 <input type="button" value="Enviar" class="button" onclick="validateForm()">
             </div>
-            
+
         </form>
 
 
         <form id="cadastroForm">
-            
+
             <h3 class="cabecalho">Cadastro</h3>
             <hr>
             <div class="cadastro">
@@ -43,30 +43,36 @@
                 <div class="div">
 
                     <label for="l-name"></label>
-                    <input type="" placeholder="Nome Completo*">
-                    <input type="" placeholder="CPF*">
+                    <input type="text" name="nome" id="nome" class="entradausuario" placeholder="NOME COMPLETO">
+
+                    <label for="l-cpf"></label>
+                    <input type="text" name="cpf" id="cpf" class="entradausuario" placeholder="CPF">
+
+                    <label for="l-endereco"></label>
+                    <input type="text" name="endereco" id="endereco" class="entradausuario" placeholder="ENDEREÇO">
 
                     <label for="l-email"></label>
-                    <input type="" placeholder="Endereço*">
+                    <input type="text" name="telefone" id="telefone" class="entradausuario" placeholder="TELEFONE">
 
                     <label for="l-email"></label>
-                    <input type="email" placeholder="E-mail*">
+                    <input type="email" name="email" id="email" class="entradausuario" placeholder="EMAIL">
 
-                <div class="password">
-                    <label for="l-password"></label>
-                    <input type="password" placeholder="Senha*">
-                    <label for="l-confirm-password"></label>
-                    <input type="password" placeholder="Confirme sua Senha*">
+                    <div class="password">
+                        <label for="l-password"></label>
+                        <input type="password" name="senha" id="senha" class="entradausuario" placeholder="SENHA">
+                        <label for="l-confirm-password"></label>
+                        <input type="password" name="senha" id="senha" class="entradausuario" placeholder="CONFIRME SUA SENHA">
                     </div>
                 </div>
                 <input type="button" value="Enviar" class="button">
             </div>
-            
+
         </form>
-       
+
     </div>
 
 </body>
 <script src="login.js"></script>
 <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+
 </html>
