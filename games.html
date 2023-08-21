@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
-<body class="bg-fixed-prod">
+<body class="principal">
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html"><img src="img/tec.png" alt="" width="100px" height="70px"></a>
 
-                <a class="navbar-brand" href="games.html" style="color: rgb(214, 170, 255);">Produtos</a>
+                <a class="navbar-brand" href="Home.html" style="color: rgb(200, 200, 200);">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +26,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" style="color: aqua;" aria-current="page"
-                                href="home.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="games.html"
+                                style="color:rgb(200, 200, 200);">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contato</a>
+                            <a class="nav-link active" href="#" style="color: rgb(200, 200, 200);">Contato</a>
                         </li>
                         <li class="nav-item dropdown">
                             <ul class="dropdown-menu">
@@ -43,10 +43,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">Login</a>
+                            <a class="nav-link active" href="#" style="color: rgb(200, 200, 200);">Login</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -54,7 +51,7 @@
                             aria-label="Search">
                         <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiP15HK9cP_AhUQjpUCHZtZD1cQPAgI"
                             class="btn btn-outline-success" type="submit"
-                            style="color:rgb(227, 162, 255);border-color:purple; background-color: rgba(105, 58, 109, 0.868) ;">Pesquisar</button></a>
+                            style="background-color: aqua; color: black;">Pesquisar</button></a>
                     </form>
                 </div>
             </div>
@@ -62,102 +59,134 @@
     </header>
     <br>
     <br>
-    <br><br>
-    <div class="clasifica1" style="display: flex; justify-content: center; color: aliceblue;">
-        <h1>𝐏𝐄𝐑𝐈𝐅𝐄́𝐑𝐈𝐂𝐎𝐒</h1>
-    </div>
-    <br>
     <br>
     <section>
-        <div class="container mt-8">
+        <div class="container" style="height: 100%; width: 100%;">
             <div class="row">
-                <div class="col-md-4 mb-4" id="prod1">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="img/alienware.jpg" style=" width: 100%; height: 30vh;" class="card-img-top"
-                            alt="Produto 1">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Monitor Alienware Gamer Curvo
-                                Qd-oled De 34 Aw3423dw - Dell</h5>
-                            <h2 class="card-text" style="color: aliceblue;">R$ 4.658,90</h2>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
+                <div class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                class="active" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                class="active" aria-current="true" aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" id="prod2">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="img/c3584678-2bb8-4362-a488-ada438ffb973.jpg" style="width: 100%; height: 30vh;"
-                            class="card-img-top" alt="Produto 2">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Mouse VSG Aurora Austral Purple-
-                                Gamer
-                            </h5>
-                            <h2 class="card-text" style="color: aliceblue;">R$ 360,90</h2>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
+                        <div class="carousel-inner" style="margin-top: 10px;">
+                            <div class="carousel-item active">
+                                <img src="img/carrosel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="margin-top: 10px;">
+                                <img src="img/OFF.png" class="d-block h-100 w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="margin-top: 10px;">
+                                <img src="img/CORRENDO ATRÁS DO MELHOR PRA VOCÊ!.png" class="d-block h-100 w-100"
+                                    alt="...">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" id="prod3">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="img/fone.png" class="card-img-top" style="width: 100%; height: 30vh;" alt="Produto 3">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Fone De Ouvido Gamer Kotion G2000
-                                Led Com Microfone - Azul</h5>
-                            <h2 class="card-text" style="color: rgb(255, 255, 255);">R$149,99</h2>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" id="prod4">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="caminho/para/imagem3.jpg" class="card-img-top" alt="Produto 3">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Produto 3</h5>
-                            <h2 class="card-text" style="color: rgb(255, 255, 255);">Descrição do Produto 3.</h2>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" id="prod5">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="caminho/para/imagem3.jpg" class="card-img-top" alt="Produto 3">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Produto 3</h5>
-                            <p class="card-text" style="color: rgb(255, 255, 255);">Descrição do Produto 3.</p>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" id="prod6">
-                    <div class="card" style="background-color: rgba(67, 44, 69, 0.477);">
-                        <img src="caminho/para/imagem3.jpg" class="card-img-top" alt="Produto 3">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(255, 255, 255);">Produto 3</h5>
-                            <p class="card-text" style="color: rgb(255, 255, 255);">Descrição do Produto 3.</p>
-                            <a href="#" class="btn btn-primary"
-                                style="background-color: rgba(50, 48, 52, 0.747); border-color: rgb(145, 2, 211);">Adicionar
-                                ao carrinho</a>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <br>
+    <br>
+
+    <strong>
+        <div class="titulo" style="text-align: center; background-color: rgba(34, 64, 64, 0.597);">
+            <h1>𝑪𝑶𝑴𝑶 𝑵Ó𝑺 𝑻𝑹𝑨𝑩𝑨𝑳𝑯𝑨𝑴𝑶𝑺</h1>
+        </div>
+    </strong>
+    <br>
+    <section>
+        <div class="dest" style="color: rgb(86, 85, 85);  ">
+
+            <div class="card-group">
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/garena-free-fire.jpg" class="card-img-top" style="height: 70%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: aqua; text-align: center;">𝚅𝙴𝙽𝙳𝙰 𝙳𝙴 𝙶𝙰𝙼𝙴𝚂</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">Temos todos os tipos de
+                            games, pra qualquer dispositivo gamer, podem vir e comprar todos os jogos que quiser em
+                            nossa BlackFriday com apenas 50% de desconto em todos os itens. </p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/akali.jpg" class="card-img-top" style="height: 70%; width: 100%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(64, 154, 154); text-align: center;">𝙼𝙰𝚁𝙲𝙰𝚂 𝙴
+                            𝙿𝙰𝚃𝚁𝙾𝙲𝙸𝙽𝙰𝙳𝙾𝚁𝙴𝚂</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">As melhores marcas de
+                            produtos tecnológico está em nossa loja, tudo que você procurar para o seu mundo gamer temos
+                            aqui; até mesmo a parte de hardware pra construir sozinho seu PC.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/Cs go.jpg" class="card-img-top" style="height: 70%; width: 100%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(187, 184, 4); text-align: center;">𝙲𝙰𝙼𝙿𝙾
+                            𝙰𝙱𝙴𝚁𝚃𝙾</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">Na loja temos até um espaço
+                            Gamer, pra vocês conhecerem nossos melhores produtos e viver um pouco do mundo Gamer que
+                            poderá levar pra casa no mesmo dia.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer class="footer-commercial" style="
+        background-color: rgb(32, 106, 106); width: 100%; height: 50%; margin-top: 50px;">
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑹𝒆𝒅𝒆𝒔 𝑺𝒐𝒄𝒊𝒂𝒊𝒔</h4>
+                    <div class="footer-social" style="display: flexbox;">
+                        <img src="img/controle.png" style="height: 5vh;"><i class="bi bi-site">𝖘𝖎𝖙𝖊</i>
+                        <br>
+                        <i class="bi bi-twitter"></i>
+                        <img src="img/insta.png" style="height: 5vh;"><i class="bi bi-instagram">𝖎𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖓</i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑳𝒐𝒄𝒂𝒍𝒊𝒛𝒂𝒄̧𝒂̃𝒐</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789012345!2d-0.12345678901234567!3d12.345678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU4JzI0LjYiTiAwwrAyMScxOS45Ilc!5e0!3m2!1sen!2sus!4v12345678901234567!5m2!1sen!2sus"
+                        width="100%" height="70%" style="border:0;" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑷𝒂𝒕𝒓𝒐𝒄𝒊𝒏𝒂𝒅𝒐𝒓𝒆𝒔</h4>
+                    <div class="footer-social" style="display: flexbox;">
+                        <img src="img/veri.png" style="height: 5vh;"><i class="bi bi-site">Mᴏᴛᴏʀᴏʟᴀ, Nɪᴋᴇ, Iɴᴛᴇʟ, Bᴀɴᴄᴏ ᴅᴏ Bʀᴀsɪʟ, Mᴇʀᴄᴀᴅᴏ ʟɪᴠʀᴇ...</i>
+                </div>
+                </div>
+                <div class="text-center">
+                    <p>&copy; 2023 Empresa TECPlayer. Dell.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-
-</html>
-</body>
 
 </html>
