@@ -1,17 +1,33 @@
 <?php
-    if(isset($_POST['submit']))
-    print_r($_POST[´<br>´])
-    print_r($_POST[´nome´])
-    print_r($_POST[´<br>´])
-    print_r($_POST[´cpf´])
-    print_r($_POST[´<br>´])
-    print_r($_POST[´endereco´])
-    print_r($_POST[´<br>´])
-    print_r($_POST[´telefone´])
-    print_r($_POST[´<br>´])
-    print_r($_POST[´email´])
-    print_r($_POST[´<br>´])
-    print_r($_POST[´senha´])
+    if(isset($_POST['submit']));
+
+    /*
+    Teste de envio de informações do cadastro ao banco de dados
+    print_r('Nome: '. $_POST['nome']);
+    print_r('<br>');
+    print_r('CPF: '. $_POST['cpf']);
+    print_r('<br>');
+    print_r('Endereço: '. $_POST['endereco']);
+    print_r('<br>');
+    print_r('Telefone: '. $_POST['telefone']);
+    print_r('<br>');
+    print_r('Email: '. $_POST['email']);
+    print_r('<br>');
+    print_r('Senha: '. $_POST['senha']);
+    print_r('<br>');
+    */
+
+    //Variáveis para as querrys do BD
+    include_once('configuracaobd.php');
+    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
+    $endereco = $_POST['endereco'];
+    $telefone = $_POST['telefone'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO Usuarios(nome,cpf,endereco,telefone,email,senha) VALUES ('$nome','$cpf','$endereco','$telefone','$email','$senha')");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

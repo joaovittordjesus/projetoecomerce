@@ -1,18 +1,19 @@
-CREATE TABLE Usuario (
+CREATE TABLE Usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    cpf VARCHAR(11) NOT NULL,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    celular VARCHAR(15),
-    endereco VARCHAR(255),
+    telefone VARCHAR(15)NOT NULL,
+    endereco VARCHAR(255)NOT NULL,
     senha VARCHAR(60) NOT NULL
 );
 
 DELIMITER //
 
-CREATE TRIGGER check_nao_nulo BEFORE INSERT ON Usuario
+CREATE TRIGGER check_nao_nulo BEFORE INSERT ON Usuarios
 FOR EACH ROW
 BEGIN
-    IF NEW.nome IS NULL OR NEW.email IS NULL OR NEW.senha IS NULL OR NEW.celular IS NULL OR NEW.endereco IS NULL THEN
+    IF NEW.nome IS NULL OR NEW.cpf IS NULL OR NEW.email IS NULL OR NEW.senha IS NULL OR NEW.telefone IS NULL OR NEW.endereco IS NULL THEN
         SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Não é permitido inserir valores nulos.';
     END IF;
 END;
