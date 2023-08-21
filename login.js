@@ -1,6 +1,6 @@
 function mostrarCadastro() {
     document.getElementById("loginForm").style.display = "none"; //chamando o meu form do HTML
-    
+
     document.getElementById("cadastroForm").style.display = "block";
 }
 
@@ -37,13 +37,13 @@ function validateForm() {
         passwordError.textContent = "Este campo é obrigatório"
         return;
     }
-     else if (passwordInput.value.length < 8 || !/[a-zA-Z]/.test(passwordInput.value) || !/\d/.test(passwordInput.value)) {
-    passwordError.textContent = "A senha deve ter pelo menos 8 caracteres, incluindo letras e números.";
-    return;
+    else if (passwordInput.value.length < 8 || !/[a-zA-Z]/.test(passwordInput.value) || !/\d/.test(passwordInput.value)) {
+        passwordError.textContent = "A senha deve ter pelo menos 8 caracteres, incluindo letras e números.";
+        return;
     }
 
     // Enviar o formulário se tudo estiver correto
     document.getElementById("myForm").submit();
-    
+
 }
 

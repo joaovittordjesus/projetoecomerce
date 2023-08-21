@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="img/tec.png" alt="" width="100px" height="70px"></a>
+
+                <a class="navbar-brand" href="home.html" style="color: rgb(255, 255, 255);">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="produtos.html"
+                                style="color:rgb(255, 255, 255);">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                       
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Procurar Eventos,Música..."
+                            aria-label="Search">
+                        <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiP15HK9cP_AhUQjpUCHZtZD1cQPAgI"
+                            class="btn btn-outline-success" type="submit"
+                            style="background-color: rgb(32, 106, 106); color: white;">Pesquisar</button></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <form id="loginForm">
+
+            <h3 class="cabecalho">Login</h3>
+            <hr>
+            <div class="login">
+
+                <div class="div">
+
+                    <label for="l-email"></label>
+                    <input type="email" placeholder="E-mail" id="email">
+                    <span id="emailError" style="color: red;"></span>
+
+                    <label for="l-password"></label>
+                    <input type="password" placeholder="Senha" id="password">
+                    <span id="passwordError" style="color: red;"></span>
+
+                </div>
+                <p>Ainda não tem uma conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a></p>
+                <input type="button" value="Enviar" class="button" onclick="validateForm()">
+            </div>
+
+        </form>
+
+
+        <form id="cadastroForm">
+
+            <h3 class="cabecalho">Cadastro</h3>
+            <hr>
+            <div class="cadastro">
+
+                <div class="div">
+
+                    <label for="l-name"></label>
+                    <input type="text" name="nome" id="nome" class="entradausuario" placeholder="NOME COMPLETO">
+
+                    <label for="l-cpf"></label>
+                    <input type="text" name="cpf" id="cpf" class="entradausuario" placeholder="CPF">
+
+                    <label for="l-endereco"></label>
+                    <input type="text" name="endereco" id="endereco" class="entradausuario" placeholder="ENDEREÇO">
+
+                    <label for="l-email"></label>
+                    <input type="text" name="telefone" id="telefone" class="entradausuario" placeholder="TELEFONE">
+
+                    <label for="l-email"></label>
+                    <input type="email" name="email" id="email" class="entradausuario" placeholder="EMAIL">
+
+                    <div class="password">
+                        <label for="l-password"></label>
+                        <input type="password" name="senha" id="senha" class="entradausuario" placeholder="SENHA">
+                        <label for="l-confirm-password"></label>
+                        <input type="password" name="senha" id="senha" class="entradausuario" placeholder="CONFIRME SUA SENHA">
+                    </div>
+                </div>
+                <input type="button" value="Enviar" class="button">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+<script src="login.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+
+</html>
