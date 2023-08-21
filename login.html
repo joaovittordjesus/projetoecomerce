@@ -1,3 +1,18 @@
+<?php
+    if(isset($_POST['submit']))
+    print_r($_POST[´<br>´])
+    print_r($_POST[´nome´])
+    print_r($_POST[´<br>´])
+    print_r($_POST[´cpf´])
+    print_r($_POST[´<br>´])
+    print_r($_POST[´endereco´])
+    print_r($_POST[´<br>´])
+    print_r($_POST[´telefone´])
+    print_r($_POST[´<br>´])
+    print_r($_POST[´email´])
+    print_r($_POST[´<br>´])
+    print_r($_POST[´senha´])
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +25,7 @@
 
 <body>
     <div class="main">
-        <form id="loginForm">
+        <form action="" id="loginForm">
 
             <h3 class="cabecalho">LOGIN</h3>
             <hr>
@@ -34,7 +49,7 @@
         </form>
 
 
-        <form id="cadastroForm">
+        <form action="login.php" method="POST" id="cadastroForm">
 
             <h3 class="cabecalho">CADASTRO</h3>
             <hr>
@@ -54,7 +69,7 @@
                     <input type="text" name="endereco" id="endereco" class="entradausuario" placeholder="ENDEREÇO">
                     <br><br>
 
-                    <label for="l-email"></label>
+                    <label for="l-telefone"></label>
                     <input type="text" name="telefone" id="telefone" class="entradausuario" placeholder="TELEFONE">
                     <br><br>
 
