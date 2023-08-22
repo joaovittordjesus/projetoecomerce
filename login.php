@@ -94,25 +94,24 @@
     </header>
 
     <div class="main">
-        <form action="" id="loginForm">
-
+        <form action="testelogin.php" id="loginForm">
+            <!--FORMULÁRIO DE LOGIN-->
             <h3 class="cabecalho">LOGIN</h3>
-            <hr>
             <div class="login">
 
                 <div class="div">
 
                     <label for="l-email"></label>
-                    <input type="email" placeholder="E-mail" id="email">
+                    <input type="email" name="email" placeholder="Email" id="email">
                     <span id="emailError" style="color: red;"></span>
 
                     <label for="l-password"></label>
-                    <input type="password" placeholder="Senha" id="password">
+                    <input type="password" name="senha" placeholder="Senha"  id="senha" id="password">
                     <span id="passwordError" style="color: red;"></span>
 
                 </div>
                 <p>Ainda não tem uma conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a></p>
-                <input type="button" value="Enviar" class="button" onclick="validateForm()">
+                <input type="submit" name="submit" value="Enviar" class="button" onclick="validateForm()">
             </div>
 
         </form>
@@ -120,7 +119,7 @@
 
         <form action="login.php" method="POST" id="cadastroForm">
 
-            <!--=====CADASTRO=====-->
+            <!--FORMULÁRIO DE CADASTRO-->
             <h3 class="cabecalho">CADASTRO</h3>
             <hr>
             <div class="cadastro">
