@@ -1,0 +1,51 @@
+body{
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(188, 247, 255) 0%, rgb(209, 255, 250) 50%, rgb(181, 255, 253) 100%);
+}
+
+.scroll-nav {
+    background-color: #333; 
+    transition: background-color 0.3s ease; 
+}
+.top h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffffc8;
+    border-color: black;
+  }
+.bg-fixed-prod{  
+    background-image: url('https://i.pinimg.com/originals/61/ae/57/61ae57fdcd84621dee64aabe16db1bda.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media (max-width: 70%) {
+    .background-image {
+        background-size: contain;
+    }
+}
+/*======SLIDES========*/
+.container{
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*====================*/
+/*======CARDS======*/
+.card{
+    margin: 1%;
+}
+/*=================*/
+.footer-commercial {
+    background-color: #333;
+    color: white;
+    padding: 5%;
+}
+.footer-social {
+    margin-bottom: 20px;
+}
+.footer-contact {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
