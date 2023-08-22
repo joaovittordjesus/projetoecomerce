@@ -60,20 +60,20 @@
         </nav>
     </header>
     <div class="main">
-        <form id="loginForm">
+        <!--Formulário de Login-->
+        <form action="testelogin.php" method="POST"  id="loginForm">
 
             <h3 class="cabecalho">Login</h3>
-            <hr>
             <div class="login">
 
                 <div class="div">
 
                     <label for="l-email"></label>
-                    <input type="email" placeholder="E-mail" id="email">
+                    <input type="email" name="email" placeholder="E-mail" id="email">
                     <span id="emailError" style="color: red;"></span>
 
                     <label for="l-password"></label>
-                    <input type="password" placeholder="Senha" id="password">
+                    <input type="password" name="senha" placeholder="Senha" id="password">
                     <span id="passwordError" style="color: red;"></span>
 
                 </div>
@@ -85,7 +85,7 @@
 
 
         <form id="cadastroForm">
-
+            <!--Formulário de Cadastro-->
             <h3 class="cabecalho">Cadastro</h3>
             <hr>
             <div class="cadastro">
