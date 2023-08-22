@@ -1,29 +1,31 @@
 <?php
-    //print_r($_REQUEST);
+    // Verifica se o formulário foi submetido e se os campos de email e senha não estão vazios
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])){
-        //Acessa o sistema
+        // Inclui o arquivo de configuração do banco de dados
         include_once('configuracaobd.php');
+        
+        // Captura os valores de email e senha do formulário
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        /*print_r('Email: ' . $email);
-        print_r('<br>');
-        print_r('Senha: ' . $senha);*/
-
+        // Cria a consulta SQL para verificar se o usuário existe no banco de dados
         $sql = "SELECT * FROM Usuarios WHERE email = '$email' and senha = '$senha'";
 
+        // Executa a consulta no banco de dados
         $result = $conexao->query($sql);
-        /*print_r($result);
-        print_r($sql);*/
+
+        // Verifica se a consulta retornou algum resultado
         if(mysqli_num_rows($result) < 1){
-            print_r('Não Existe');
+            // Caso não haja correspondência, redireciona de volta para a página de login
+            header('Location: login.php');
         }
         else{
-            print_r('Existe');
+            // Caso haja correspondência, redireciona para a página de home (ou onde desejar)
+            header('Location: home.php');
         }
     }
     else{
-        //Não Acessa o sistema
+        // Se o formulário não foi submetido corretamente, redireciona de volta para a página de login
         header('Location: login.php');
     }
 ?>

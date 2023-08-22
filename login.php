@@ -106,7 +106,7 @@
                     <span id="emailError" style="color: red;"></span>
 
                     <label for="l-password"></label>
-                    <input type="password" name="senha" placeholder="Senha"  id="senha" id="password">
+                    <input type="password" name="senha" placeholder="Senha"  id="senha">
                     <span id="passwordError" style="color: red;"></span>
 
                 </div>
