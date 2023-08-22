@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="login.html" style="color: rgb(200, 200, 200);">Login</a>
+                            <a class="nav-link active" href="login.php" style="color: rgb(200, 200, 200);">Login</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
