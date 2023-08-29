@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body class="principal">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.php"><img src="img/tec.png" alt="" width="100px" height="70px"></a>
+
+                <a class="navbar-brand" href="home.php" style="color: rgb(200, 200, 200);">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="games.php"
+                                style="color:rgb(200, 200, 200);">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.php" style="color: rgb(200, 200, 200);">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.php" style="color: rgb(200, 200, 200);">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Procurar Eventos,Música..."
+                            aria-label="Search">
+                        <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiP15HK9cP_AhUQjpUCHZtZD1cQPAgI"
+                            class="btn btn-outline-success" type="submit"
+                            style="background-color: aqua; color: black;">Pesquisar</button></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="container" style="height: 100%; width: 100%;">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                class="active" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                class="active" aria-current="true" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="margin-top: 10px;">
+                            <div class="carousel-item active">
+                                <img src="img/carrosel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="margin-top: 10px;">
+                                <img src="img/OFF.png" class="d-block h-100 w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="margin-top: 10px;">
+                                <img src="img/CORRENDO ATRÁS DO MELHOR PRA VOCÊ!.png" class="d-block h-100 w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <strong>
+        <div class="titulo" style="text-align: center; background-color: rgba(34, 64, 64, 0.597);">
+            <h1>𝑪𝑶𝑴𝑶 𝑵Ó𝑺 𝑻𝑹𝑨𝑩𝑨𝑳𝑯𝑨𝑴𝑶𝑺</h1>
+        </div>
+    </strong>
+    <br>
+    <section>
+        <div class="dest" style="color: rgb(86, 85, 85);  ">
+
+            <div class="card-group">
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/garena-free-fire.jpg" class="card-img-top" style="height: 70%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: aqua; text-align: center;">𝚅𝙴𝙽𝙳𝙰 𝙳𝙴 𝙶𝙰𝙼𝙴𝚂</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">Temos todos os tipos de
+                            games, pra qualquer dispositivo gamer, podem vir e comprar todos os jogos que quiser em
+                            nossa BlackFriday com apenas 50% de desconto em todos os itens. </p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/akali.jpg" class="card-img-top" style="height: 70%; width: 100%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(64, 154, 154); text-align: center;">𝙼𝙰𝚁𝙲𝙰𝚂 𝙴
+                            𝙿𝙰𝚃𝚁𝙾𝙲𝙸𝙽𝙰𝙳𝙾𝚁𝙴𝚂</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">As melhores marcas de
+                            produtos tecnológico está em nossa loja, tudo que você procurar para o seu mundo gamer temos
+                            aqui; até mesmo a parte de hardware pra construir sozinho seu PC.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(41, 41, 41, 0.932);">
+                    <img src="img/Cs go.jpg" class="card-img-top" style="height: 70%; width: 100%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(187, 184, 4); text-align: center;">𝙲𝙰𝙼𝙿𝙾
+                            𝙰𝙱𝙴𝚁𝚃𝙾</h5>
+                        <p class="card-text" style="text-align: center; color: aliceblue;">Na loja temos até um espaço
+                            Gamer, pra vocês conhecerem nossos melhores produtos e viver um pouco do mundo Gamer que
+                            poderá levar pra casa no mesmo dia.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer class="footer-commercial" style="
+        background-color: rgb(32, 106, 106); width: 100%; height: 50%; margin-top: 50px;">
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑹𝒆𝒅𝒆𝒔 𝑺𝒐𝒄𝒊𝒂𝒊𝒔</h4>
+                    <div class="footer-social" style="display: flexbox;">
+                        <img src="img/controle.png" style="height: 5vh;"><i class="bi bi-site">𝖘𝖎𝖙𝖊</i>
+                        <br>
+                        <i class="bi bi-twitter"></i>
+                        <img src="img/insta.png" style="height: 5vh;"><i class="bi bi-instagram">𝖎𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖓</i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑳𝒐𝒄𝒂𝒍𝒊𝒛𝒂𝒄̧𝒂̃𝒐</h4>
+                    <iframe
+                        src="https://goo.gl/maps/BYrLhHDKYvhK86A98"
+                        width="100%" height="70%" style="border:0;" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: aqua;">𝑷𝒂𝒕𝒓𝒐𝒄𝒊𝒏𝒂𝒅𝒐𝒓𝒆𝒔</h4>
+                    <div class="footer-social" style="display: flexbox;">
+                        <img src="img/veri.png" style="height: 5vh;"><i class="bi bi-site">Mᴏᴛᴏʀᴏʟᴀ, Nɪᴋᴇ, Iɴᴛᴇʟ, Bᴀɴᴄᴏ ᴅᴏ Bʀᴀsɪʟ, Mᴇʀᴄᴀᴅᴏ ʟɪᴠʀᴇ...</i>
+                </div>
+                </div>
+                <div class="text-center">
+                    <p>&copy; 2023 Empresa TECPlayer. Dell.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</html>

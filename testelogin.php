@@ -1,5 +1,6 @@
 <?php
     // Verifica se o formulário foi submetido e se os campos de email e senha não estão vazios
+    //Error(0)
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])){
         // Inclui o arquivo de configuração do banco de dados
         include_once('configuracaobd.php');
@@ -15,7 +16,7 @@
         $result = $conexao->query($sql);
 
         // Verifica se a consulta retornou algum resultado
-        if(mysqli_num_rows($result) < 1){
+        if(mysqli_num_rows($result) <1){
             // Caso não haja correspondência, redireciona de volta para a página de login
             header('Location: login.php');
         }
