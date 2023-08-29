@@ -168,9 +168,7 @@
                 </div>
                 <div class="col-md-4">
                     <h4 style="color: aqua;">𝑳𝒐𝒄𝒂𝒍𝒊𝒛𝒂𝒄̧𝒂̃𝒐</h4>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789012345!2d-0.12345678901234567!3d12.345678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU4JzI0LjYiTiAwwrAyMScxOS45Ilc!5e0!3m2!1sen!2sus!4v12345678901234567!5m2!1sen!2sus"
-                        width="100%" height="70%" style="border:0;" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753321.4192618346!2d-50.48583831505089!3d-23.26662169698167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b4738427467%3A0xd478f8a35b49bb04!2sTecplaygames!5e0!3m2!1spt-BR!2sbr!4v1693329749394!5m2!1spt-BR!2sbr" width="100%" height="70%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-4">
                     <h4 style="color: aqua;">𝑷𝒂𝒕𝒓𝒐𝒄𝒊𝒏𝒂𝒅𝒐𝒓𝒆𝒔</h4>
