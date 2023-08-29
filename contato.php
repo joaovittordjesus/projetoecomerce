@@ -15,9 +15,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img src="img/tec.png" alt="" width="100px" height="70px"></a>
+                <a class="navbar-brand" href="home.php"><img src="img/tec.png" alt="" width="100px" height="70px"></a>
 
-                <a class="navbar-brand" href="home.html" style="color: rgb(200, 200, 200);">Home</a>
+                <a class="navbar-brand" href="home.php" style="color: rgb(200, 200, 200);">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +26,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="games.html"
+                            <a class="nav-link active" aria-current="page" href="games.php"
                                 style="color:rgb(200, 200, 200);">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contato.html" style="color: rgb(200, 200, 200);">Contato</a>
+                            <a class="nav-link active" href="contato.php" style="color: rgb(200, 200, 200);">Contato</a>
                         </li>
                         <li class="nav-item dropdown">
                             <ul class="dropdown-menu">
